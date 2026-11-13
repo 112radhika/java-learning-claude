@@ -27,8 +27,13 @@ public class UserScannerInput {
     	System.out.println("Sum is: "+ (firstNum+secondNum));
     	System.out.println("Difference is: "+ (firstNum-secondNum));
     	System.out.println("Product is: "+ (firstNum*secondNum));
-    	System.out.println("Quotient is: "+ (firstNum/secondNum));
-    	System.out.println("Remainder is: "+ (firstNum%secondNum));
+    	if(secondNum!=0) {
+    		System.out.println("Quotient is: "+ (firstNum/secondNum));
+        	System.out.println("Remainder is: "+ (firstNum%secondNum));
+    	}
+    	else {
+    		System.out.println("Cannot divide by zero");
+    	}
     	
     	System.out.println("Enter a number greater than 0: ");
     	int enteredNumber = sc.nextInt();
@@ -72,17 +77,5 @@ public class UserScannerInput {
     	System.out.println("Last digit of the Original number: " +lastDigit);
     	System.out.println("New number after removing last digit from Original number: " +newNumber);
 
-    			
-    			
-    			
-    			
-   
-    	
-
-
-    	
-
-    	
-    	
     }
 }
